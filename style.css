@@ -786,11 +786,25 @@
         gap: 20px;
     }
 
+    .team-img1,
+    .team-img2,
+    .team-img3,
+    .team-img4,
+    .team-img5,
+    .team-img6 {
+        margin-left: 20px;
+    }
+
     .price-card-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-top: 70px;
         gap: 30px;
+    }
+
+    .price-card {
+        margin-left: 50px;
+
     }
 
     .footer-content-container {
