@@ -347,7 +347,9 @@
     align-items: center;
     justify-content: space-evenly;
     margin-top: 90px;
-    background-color: rgb(34, 34, 34);;
+
+    background-color: rgb(34, 34, 34);
+    ;
 }
 
 .table-container {
@@ -387,6 +389,8 @@
 
 .input-container {
     max-width: 577px;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .input-heading {
@@ -412,12 +416,130 @@
     border: none;
 }
 
-#input-select{
-    padding: 12px 305px 12px 20px; 
+#input-select {
+    padding: 12px 305px 12px 20px;
 }
 
-#btn-calculate{
+#btn-calculate {
     margin-top: 34px;
+}
+
+/* Team section style */
+
+.team {
+    max-width: 1060px;
+    margin: 88px auto;
+}
+
+.team-content {
+    max-width: 670px;
+    margin: auto;
+    text-align: center;
+}
+
+.team-heading {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.team-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.team-img-container {
+    max-width: 1060px;
+    margin-top: 58px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.team-image{
+    max-width: 1020px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.team-img1 {
+    max-width: 326px;
+    height: 272px;
+    background-image: url("images/trainer1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.team-img-content {
+    position: relative;
+    top: 215px;
+    left: 20px;
+}
+
+.team-img-content h3{
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.team-img-content p{
+    color: rgba(255, 255, 255, 0.5);
+    margin: 2px;
+}
+
+.team-img2 {
+    max-width: 326px;
+    height: 272px;
+    background-image: url("images/trainer2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.team-img3 {
+    max-width: 326px;
+    height: 272px;
+    background-image: url("images/trainer3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.team-img4 {
+    max-width: 326px;
+    height: 272px;
+    background-image: url("images/trainer4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.team-img5 {
+    max-width: 326px;
+    height: 272px;
+    background-image: url("images/trainer5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.team-img6 {
+    max-width: 326px;
+    height: 272px;
+    background-image: url("images/trainer6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
 }
 
 
@@ -427,10 +549,10 @@
 
 @media screen and (max-width: 576px) {
 
-    .nav{
+    .nav {
         margin: 0px;
     }
-    
+
     .nav ul {
         display: none;
         margin: 0;
@@ -466,7 +588,7 @@
     }
 
     .banner-350-container {
-        margin-left: -10px;
+        margin-left: -20px;
         max-width: 180px;
     }
 
@@ -523,22 +645,29 @@
         margin-top: 50px;
     }
 
-    .calculator{
+    .calculator {
         flex-direction: column;
-        
+
     }
 
-    #input-select{
-        padding: 12px 105px 12px 20px; 
+    #input-select {
+        padding: 12px 105px 12px 20px;
     }
 
     .input-container input[type="text"] {
         padding: 12px 20px 12px 20px;
     }
 
-    .input-container{
+    .input-container {
         margin-top: 40px;
 
+    }
+
+    .team-image{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
 
 
