@@ -41,12 +41,13 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* margin-left: 125px; */
+    margin-left: 245px;
 }
 
 .nav ul {
     display: flex;
     align-items: center;
+    margin-left: 300px;
 }
 
 .nav ul li {
@@ -215,14 +216,15 @@
 .habit {
     max-width: 1044px;
     margin: auto;
+    margin-top: 100px;
 }
 
 .habit-content {
     max-width: 670px;
     margin: auto;
     text-align: center;
-   
- 
+
+
 }
 
 .habit-content-heading {
@@ -240,14 +242,14 @@
     margin: 0px;
 }
 
-.habit-card-container{
+.habit-card-container {
     max-width: 1044px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 50px;
 }
 
-.habit-card{
+.habit-card {
     max-width: 231px;
     height: 274px;
     display: flex;
@@ -255,21 +257,14 @@
     align-items: center;
 }
 
-/* .habit-img-container{
-    width: 220px;
-    height: 220px;
-    border: 2px solid red;
+.habit-img-container img {
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
-} */
-
-.habit-img-container img{
-    /* height: 100%;
-    width: 100%; */
-    border-radius: 50% ;
     margin: 0px;
 }
 
-.habit-card-heading{
+.habit-card-heading {
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 600;
@@ -277,13 +272,153 @@
     margin-top: 13px;
 }
 
-.habit-card-description{
+.habit-card-description {
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     font-weight: 400;
     text-align: center;
 }
 
+/* Run section style */
+
+.run {
+    padding: 40px 40px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    margin: 100px auto;
+    max-width: 1060px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.run-content {
+    max-width: 443px;
+}
+
+.run-content-heading {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.run-content-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.run-img {
+    max-width: 410px;
+    border-radius: 18px;
+}
+
+.run-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+/* BMI calculator section style */
+
+.bmi {
+    max-width: 670px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.bmi-heading {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.bmi-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.calculator {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 90px;
+    background-color: rgb(34, 34, 34);;
+}
+
+.table-container {
+    max-width: 350px;
+    margin-top: -17px;
+}
+
+.table-heading {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.table {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    max-width: 310px;
+}
+
+.table tr {
+    border: 1px solid white;
+}
+
+.table th {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 17px;
+}
+
+.table td {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 17px;
+}
+
+.input-container {
+    max-width: 577px;
+}
+
+.input-heading {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.input-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.input-container input[type="text"] {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 40px 12px 20px;
+    margin: 5px 5px 5px 0px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+
+#input-select{
+    padding: 12px 305px 12px 20px; 
+}
+
+#btn-calculate{
+    margin-top: 34px;
+}
 
 
 
@@ -291,8 +426,14 @@
 /* responsive in small device */
 
 @media screen and (max-width: 576px) {
+
+    .nav{
+        margin: 0px;
+    }
+    
     .nav ul {
         display: none;
+        margin: 0;
     }
 
     .icon {
@@ -325,7 +466,7 @@
     }
 
     .banner-350-container {
-        margin-left: -20px;
+        margin-left: -10px;
         max-width: 180px;
     }
 
@@ -368,10 +509,36 @@
         margin-top: -15px;
     }
 
-    .habit-card-container{
+    .habit-card-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 35px;
         justify-items: center;
+    }
+
+    .run {
+        flex-direction: column;
+    }
+
+    .run-img {
+        margin-top: 50px;
+    }
+
+    .calculator{
+        flex-direction: column;
+        
+    }
+
+    #input-select{
+        padding: 12px 105px 12px 20px; 
+    }
+
+    .input-container input[type="text"] {
+        padding: 12px 20px 12px 20px;
+    }
+
+    .input-container{
+        margin-top: 40px;
+
     }
 
 
