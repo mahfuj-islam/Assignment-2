@@ -456,7 +456,7 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
-.team-image{
+.team-image {
     max-width: 1020px;
     margin: auto;
     padding: 20px;
@@ -482,12 +482,12 @@
     left: 20px;
 }
 
-.team-img-content h3{
+.team-img-content h3 {
     color: rgb(255, 255, 255);
     margin: 0;
 }
 
-.team-img-content p{
+.team-img-content p {
     color: rgba(255, 255, 255, 0.5);
     margin: 2px;
 }
@@ -540,6 +540,54 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 18px;
+}
+
+/* price section style */
+.price {
+    max-width: 1060px;
+    margin: auto;
+    margin-top: 158px;
+    color: white;
+    text-align: center;
+}
+
+.price-content {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.price-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 70px;
+}
+
+.price-card {
+    max-width: 290px;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.price-card-heading {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.price-card-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.price-btn{
+    margin: 40px 0px;
 }
 
 
@@ -663,11 +711,18 @@
 
     }
 
-    .team-image{
+    .team-image {
         padding: 20px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
+    }
+
+    .price-card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 70px;
+        gap: 30px;
     }
 
 
